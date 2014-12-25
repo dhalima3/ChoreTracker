@@ -1,3 +1,6 @@
+/**
+ * Passport from sahat
+ */
 var _ = require('lodash');
 var passport = require('passport');
 var InstagramStrategy = require('passport-instagram').Strategy;
