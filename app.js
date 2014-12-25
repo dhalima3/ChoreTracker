@@ -32,8 +32,8 @@ var users = require('./routes/users');
 /**
  * API keys and Passport configuration.
  */
-// var secrets = require('./config/secrets');
-// var passportConf = require('./config/passport');
+var secrets = require('./config/secrets');
+var passportConf = require('./config/passport');
 
 /**
  * Create Express server
@@ -72,10 +72,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 /**
  * CSRF protection
  */
-app.use(function(req, res, next){
-    if (_.contains(csrfExclude, req.path)) return next();
-    csrf(req, res, next);
-});
+// app.use(function(req, res, next){
+//     if (_.contains(csrfExclude, req.path)) return next();
+//     csrf(req, res, next);
+// });
 
 app.use('/', routes);
 app.use('/users', users);
