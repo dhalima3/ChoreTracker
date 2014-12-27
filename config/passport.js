@@ -95,7 +95,6 @@ passport.use(new FacebookStrategy(secrets.facebook, function(req, accessToken, r
   }
 }));
 
-
 // Sign in with Google.
 
 passport.use(new GoogleStrategy(secrets.google, function(req, accessToken, refreshToken, profile, done) {
@@ -141,6 +140,48 @@ passport.use(new GoogleStrategy(secrets.google, function(req, accessToken, refre
     });
   }
 }));
+
+
+// Tumblr API setup.
+
+passport.use('tumblr', new OAuthStrategy({
+    requestTokenURL: 'http://www.tumblr.com/oauth/request_token',
+    accessTokenURL: 'http://www.tumblr.com/oauth/access_token',
+    userAuthorizationURL: 'http://www.tumblr.com/oauth/authorize',
+    consumerKey: secrets.tumblr.consumerKey,
+    consumerSecret: secrets.tumblr.consumerSecret,
+    callbackURL: secrets.tumblr.callbackURL,
+    passReqToCallback: true
+  },
+  function(req, token, tokenSecret, profile, done) {
+    User.findById(req.user._id, function(err, user) {
+      user.tokens.push({ kind: 'tumblr', accessToken: token, tokenSecret: tokenSecret });
+      user.save(function(err) {
+        done(err, user);
+      });
+    });
+  }
+));
+
+// Foursquare API setup.
+
+passport.use('foursquare', new OAuth2Strategy({
+    authorizationURL: 'https://foursquare.com/oauth2/authorize',
+    tokenURL: 'https://foursquare.com/oauth2/access_token',
+    clientID: secrets.foursquare.clientId,
+    clientSecret: secrets.foursquare.clientSecret,
+    callbackURL: secrets.foursquare.redirectUrl,
+    passReqToCallback: true
+  },
+  function(req, accessToken, refreshToken, profile, done) {
+    User.findById(req.user._id, function(err, user) {
+      user.tokens.push({ kind: 'foursquare', accessToken: accessToken });
+      user.save(function(err) {
+        done(err, user);
+      });
+    });
+  }
+));
 
 // Venmo API setup.
 
