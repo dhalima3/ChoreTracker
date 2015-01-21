@@ -1,0 +1,624 @@
+doctype //if IE 8
+html.ie8(lang='en')  
+//if IE 9
+  html.ie9(lang='en')  
+// [if !IE] <!
+|  
+html(lang='en')
+  // <![endif]
+  head
+    title Responsive HTML5 Website Template for Developers | 3rd Wave Media
+    // Meta
+    meta(charset='utf-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    meta(name='description', content='Responsive HTML5 Website landing Page for Developers')
+    |     
+    meta(name='author', content='3rd Wave Media')
+    |     
+    |     
+    link(rel='shortcut icon', href='favicon.ico')
+    |   
+    |     
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic', rel='stylesheet', type='text/css')
+    |     
+    link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    // Global CSS
+    link(rel='stylesheet', href='plugins/bootstrap/css/bootstrap.min.css')
+    // Plugins CSS
+    link(rel='stylesheet', href='plugins/font-awesome/css/font-awesome.css')
+    // github acitivity css
+    link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css')
+    |     
+    link(rel='stylesheet', href='http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css')
+    // Theme CSS
+    link#theme-style(rel='stylesheet', href='css/styles.css')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      |       
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  |  
+  body
+    // ******HEADER******
+    header.header
+      .container
+        img.profile-image.img-responsive.pull-left(src='images/profile.png', alt='James Lee')
+        |             
+        .profile-content.pull-left
+          h1.name James Lee
+          |                 
+          h2.desc Web App Developer
+          |    
+          |                 
+          ul.social.list-inline
+            li
+              a(href='#')
+                i.fa.fa-twitter
+            |                    
+            |                     
+            li
+              a(href='#')
+                i.fa.fa-google-plus
+            |                     
+            li
+              a(href='#')
+                i.fa.fa-linkedin
+            |                     
+            li
+              a(href='#')
+                i.fa.fa-github-alt
+            |                   
+            |                     
+            li.last-item
+              a(href='#')
+                i.fa.fa-hacker-news
+        // //profile
+        a.btn.btn-cta-primary.pull-right(href='http://themes.3rdwavemedia.com/', target='_blank')
+          i.fa.fa-paper-plane
+          |  Contact Me
+      // //container
+    // //header
+    .container.sections-wrapper
+      .row
+        .primary.col-md-8.col-sm-12.col-xs-12
+          section.about.section
+            .section-inner
+              h2.heading About Me
+              |                         
+              .content
+                p
+                  | Write a brief intro about yourself. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.
+                |     
+                |          
+                |         
+                p
+                  | It&apos;s a good idea to include your personal interests and hobbies as well. Commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              // //content
+            // //section-inner
+          // //section
+          section.latest.section
+            .section-inner
+              h2.heading Latest Projects
+              |                         
+              .content
+                .item.featured.text-center
+                  h3.title
+                    a(href='https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm', target='_blank') KickStarter - Potato Salad App
+                  |                                 
+                  p.summary A mobile app to help you make delicious potato salad
+                  |                                 
+                  .featured-image
+                    a(href='https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm', target='_blank')
+                      img.img-responsive.project-image(src='images/projects/project-featured.png', alt='project name')
+                    |                                     
+                    .ribbon
+                      .text App
+                  |                                     
+                  |                                 
+                  .desc.text-left
+                    p
+                      | You can promote your main project here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.
+                    |                                     
+                    p
+                      | Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. At vero eos et accusamus et iusto odio dignissimos ducimus.
+                  // //desc
+                  a.btn.btn-cta-secondary(href='https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm', target='_blank')
+                    i.fa.fa-thumbs-o-up
+                    |  Back my project
+                // //item
+                hr.divider
+                |                             
+                .item.row
+                  a.col-md-4.col-sm-4.col-xs-12(href='http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/', target='_blank')
+                    img.img-responsive.project-image(src='images/projects/project-4.png', alt='project name')
+                  |                                 
+                  .desc.col-md-8.col-sm-8.col-xs-12
+                    h3.title
+                      a(href='http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/', target='_blank') Velocity - Designed for Products
+                    |                                     
+                    p
+                      | You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.
+                    |                                     
+                    p
+                      a.more-link(href='http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/', target='_blank')
+                        i.fa.fa-external-link
+                        |  Find out more
+                  // //desc
+                // //item
+                .item.row
+                  a.col-md-4.col-sm-4.col-xs-12(href='https://wrapbootstrap.com/theme/tempo-designed-for-startups-WB07364T3?ref=3wm', target='_blank')
+                    img.img-responsive.project-image(src='images/projects/project-1.png', alt='project name')
+                  |                                 
+                  .desc.col-md-8.col-sm-8.col-xs-12
+                    h3.title
+                      a(href='https://wrapbootstrap.com/theme/tempo-designed-for-startups-WB07364T3?ref=3wm', target='_blank') Tempo - Designed for Startups
+                    |                                     
+                    p
+                      | You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.
+                    |                                     
+                    p
+                      a.more-link(href='https://wrapbootstrap.com/theme/tempo-designed-for-startups-WB07364T3?ref=3wm', target='_blank')
+                        i.fa.fa-external-link
+                        |  Find out more
+                  // //desc
+                // //item
+                .item.row
+                  a.col-md-4.col-sm-4.col-xs-12(href='https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm', target='_blank')
+                    img.img-responsive.project-image(src='images/projects/project-2.png', alt='project name')
+                  |                                 
+                  .desc.col-md-8.col-sm-8.col-xs-12
+                    h3.title
+                      a(href='https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm', target='_blank') Delta - Designed for Mobile Apps
+                    |                                     
+                    p
+                      | You can put one of your secondary projects here. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+                    |                                     
+                    p
+                      a.more-link(href='https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm', target='_blank')
+                        i.fa.fa-external-link
+                        |  Find out more
+                  // //desc
+                // //item
+              // //content
+            // //section-inner
+          // //section
+          section.projects.section
+            .section-inner
+              h2.heading Other Projects
+              |                         
+              .content
+                .item
+                  h3.title
+                    a(href='#') Project Title Cras Lacus
+                  |                                 
+                  p.summary
+                    | Provide a brief description of your project. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatu.
+                  |                                 
+                  p
+                    a.more-link(href='https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm', target='_blank')
+                      i.fa.fa-external-link
+                      |  Find out more
+                // //item
+                .item
+                  h3.title
+                    a(href='#') Project Title Cras eget lacus
+                    |  
+                    span.label.label-theme Open Source
+                  |                                 
+                  p.summary
+                    | Provide a brief description of your project. Maecenas ornare ultricies risus, in fermentum augue consectetur in. Vestibulum vitae mauris iaculis, sollicitudin velit in, molestie nulla.
+                  |                                 
+                  p
+                    a.more-link(href='https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm', target='_blank')
+                      i.fa.fa-external-link
+                      |  View on GitHub
+                // //item
+                .item
+                  h3.title
+                    a(href='#') Project Title Maecenas Ornare
+                    |  
+                    span.label.label-theme Open Source
+                  |                                 
+                  p.summary
+                    | Provide a brief description of your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel purus enim. Etiam tortor felis, fermentum ac ultrices sed.
+                  |                                 
+                  p
+                    a.more-link(href='https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm', target='_blank')
+                      i.fa.fa-external-link
+                      |  View on GitHub
+                // //item
+                a.btn.btn-cta-secondary(href='#')
+                  | More on CoderWall 
+                  i.fa.fa-chevron-right
+              // //content
+            // //section-inner
+          // //section
+          section.experience.section
+            .section-inner
+              h2.heading Work Experience
+              |                         
+              .content
+                .item
+                  h3.title
+                    | Co-Founder &amp; Lead Developer - 
+                    span.place
+                      a(href='#') Startup Hub
+                    |  
+                    span.year (2014 - Present)
+                  |                                 
+                  p
+                    | Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+                // //item
+                .item
+                  h3.title
+                    | Software Engineer - 
+                    span.place
+                      a(href='#') Google
+                    |  
+                    span.year (2013 - 2014)
+                  |                                 
+                  p
+                    | Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+                // //item
+                .item
+                  h3.title
+                    | Software Engineer - 
+                    span.place
+                      a(href='#') eBay
+                    |  
+                    span.year (2012 - 2013)
+                  |                                 
+                  p
+                    | Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+                // //item
+              // //content
+            // //section-inner
+          // //section
+          section.github.section
+            .section-inner
+              h2.heading My GitHub
+              |                         
+              p
+                | You can embed your GitHub activities using Casey Scarborough&apos;s 
+                a(href='http://caseyscarborough.com/projects/github-activity/', target='_blank') GitHub Activity Stream
+                |  widget. You can also take a screenshot of your GitHub chart and put it here for fun.
+              |                         
+              p
+                a(href='#')
+                  img.img-responsive(src='images/github-chart.png', alt='GitHub Contributions Chart')
+              // //Usage: http://caseyscarborough.com/projects/github-activity/
+              #ghfeed.ghfeed
+              // //ghfeed
+            // //secton-inner
+          // //section
+        // //primary
+        .secondary.col-md-4.col-sm-12.col-xs-12
+          aside.info.aside.section
+            .section-inner
+              h2.heading.sr-only Basic Information
+              |                         
+              .content
+                ul.list-unstyled
+                  li
+                    i.fa.fa-map-marker
+                    span.sr-only Location:
+                    | San Francisco, US
+                  |                                 
+                  li
+                    i.fa.fa-envelope-o
+                    span.sr-only Email:
+                    a(href='#') jameslee@website.com
+                  |                                 
+                  li
+                    i.fa.fa-link
+                    span.sr-only Website:
+                    a(href='#') http://www.website.com
+              // //content
+            // //section-inner
+          // //aside
+          aside.skills.aside.section
+            .section-inner
+              h2.heading Skills
+              |                         
+              .content
+                p.intro
+                  | Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Coderwall profile so people can get more info there.
+                |                             
+                |                             
+                .skillset
+                  .item
+                    h3.level-title
+                      | Python &amp; Django
+                      span.level-label(data-toggle='tooltip', data-placement='left', data-animation='true', title='You can use the tooltip to add more info...') Expert
+                    |                                     
+                    .level-bar
+                      .level-bar-inner(data-level='96%')
+                    // //level-bar
+                  // //item
+                  .item
+                    h3.level-title
+                      | Javascript &amp; jQuery
+                      span.level-label Expert
+                    |                                     
+                    .level-bar
+                      .level-bar-inner(data-level='96%')
+                    // //level-bar
+                  // //item
+                  .item
+                    h3.level-title
+                      | HTML5, CSS3, SASS &amp; LESS
+                      span.level-label Expert
+                    |                                     
+                    .level-bar
+                      .level-bar-inner(data-level='96%')
+                    // //level-bar
+                  // //item
+                  .item
+                    h3.level-title
+                      | Ruby on Rails
+                      span.level-label Pro
+                    |                                     
+                    .level-bar
+                      .level-bar-inner(data-level='85%')
+                    // //level-bar
+                  // //item
+                  p
+                    a.more-link(href='#')
+                      i.fa.fa-external-link
+                      |  More on Coderwall
+              // //content
+            // //section-inner
+          // //section
+          aside.testimonials.aside.section
+            .section-inner
+              h2.heading Testimonials
+              |                         
+              .content
+                .item
+                  blockquote.quote
+                    p
+                      i.fa.fa-quote-left
+                      | James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!
+                  |                 
+                  |                                 
+                  p.source
+                    span.name Tim Adams
+                    br
+                    span.title Curabitur commodo
+                // //item
+                p
+                  a.more-link(href='#')
+                    i.fa.fa-external-link
+                    |  More on Linkedin
+              // //content
+            // //section-inner
+          // //section
+          aside.education.aside.section
+            .section-inner
+              h2.heading Education
+              |                         
+              .content
+                .item
+                  h3.title
+                    i.fa.fa-graduation-cap
+                    |  MSc Psychology and Computer Science
+                  |                                 
+                  h4.university
+                    | University College London 
+                    span.year (2011-2012)
+                // //item
+                .item
+                  h3.title
+                    i.fa.fa-graduation-cap
+                    |  BSc Computer Science
+                  |                                 
+                  h4.university
+                    | University of Bristol 
+                    span.year (2008-2011)
+                // //item
+              // //content
+            // //section-inner
+          // //section
+          aside.languages.aside.section
+            .section-inner
+              h2.heading Languages
+              |                         
+              .content
+                ul.list-unstyled
+                  li.item
+                    span.title
+                      strong English:
+                    |                                     
+                    span.level
+                      | Native Speaker 
+                      br.visible-xs
+                      i.fa.fa-star
+                      |  
+                      i.fa.fa-star
+                      |  
+                      i.fa.fa-star
+                      |  
+                      i.fa.fa-star
+                      |  
+                      i.fa.fa-star
+                  // //item
+                  li.item
+                    span.title
+                      strong Spanish:
+                    |                                     
+                    span.level
+                      | Professional Proficiency 
+                      br.visible-sm.visible-xs
+                      i.fa.fa-star
+                      |  
+                      i.fa.fa-star
+                      |  
+                      i.fa.fa-star
+                      |  
+                      i.fa.fa-star-half
+                  // //item
+              // //content
+            // //section-inner
+          // //section
+          aside.blog.aside.section
+            .section-inner
+              h2.heading Latest Blog Posts
+              |                         
+              p
+                | You can use Sascha Depold&apos;s 
+                a(href='https://github.com/sdepold/jquery-rss', target='_blank') jQuery RSS plugin
+                |  to pull in your blog post feeds.
+              |                         
+              #rss-feeds.content
+              // //content
+            // //section-inner
+          // //section
+          aside.list.music.aside.section
+            .section-inner
+              h2.heading Favourite coding music
+              |                         
+              .content
+                ul.list-unstyled
+                  li
+                    i.fa.fa-headphones
+                    |  
+                    a(href='#') Etiam hendrerit urna nunc
+                  |                                 
+                  li
+                    i.fa.fa-headphones
+                    |  
+                    a(href='#') Ut sollicitudin in mauris non auctor
+                  |                                 
+                  li
+                    i.fa.fa-headphones
+                    |  
+                    a(href='#') Etiam hendrerit urna nunc
+                  |                                 
+                  li
+                    i.fa.fa-headphones
+                    |  
+                    a(href='#') Duis et felis bibendum
+              // //content
+            // //section-inner
+          // //section
+          aside.list.conferences.aside.section
+            .section-inner
+              h2.heading Conferences
+              |                         
+              .content
+                ul.list-unstyled
+                  li
+                    i.fa.fa-calendar
+                    |  
+                    a(href='https://developer.apple.com/wwdc/', target='_blank') WWDC 2014
+                    |  (San Francisco)
+                  |                                 
+                  li
+                    i.fa.fa-calendar
+                    |  
+                    a(href='http://hive.aigaseattle.org/') Hive
+                    |  (Seattle)
+              // //content
+            // //section-inner
+          // //section
+          aside.credits.aside.section
+            .section-inner
+              h2.heading Credits
+              |                         
+              .content
+                ul.list-unstyled
+                  li
+                    a(href='http://getbootstrap.com/', target='_blank')
+                      i.fa.fa-external-link
+                      |  Bootstrap 3.2
+                  |                                 
+                  li
+                    a(href='http://fortawesome.github.io/Font-Awesome/', target='_blank')
+                      i.fa.fa-external-link
+                      |  FontAwsome 4.1
+                  |                                 
+                  li
+                    a(href='http://jquery.com/', target='_blank')
+                      i.fa.fa-external-link
+                      |  jQuery
+                  |                                 
+                  li
+                    a(href='http://caseyscarborough.com/projects/github-activity/', target='_blank')
+                      i.fa.fa-external-link
+                      |  GitHub Activity Stream
+                  |                                 
+                  |                                 
+                  li
+                    a(href='https://github.com/sdepold/jquery-rss', target='_blank')
+                      i.fa.fa-external-link
+                      |  jQuery RSS
+                  |                                 
+                  |                                 
+                  li
+                    | Profile image: 
+                    a(href='https://www.flickr.com/photos/dotbenjamin/2577394151', target='_blank') Ben Smith
+                  |                                 
+                  li
+                    | iPad and iPhone mocks: 
+                    a(href='https://dribbble.com/perlerar', target='_blank') Regy Perlera
+                |                             
+                |                             
+                hr
+                |                             
+                |                              
+                p
+                  | This responsive HTML5 CSS3 site template is handcrafted by UX designer 
+                  a(href='https://www.linkedin.com/in/xiaoying', target='_blank') Xiaoying Riley
+                  |  at 
+                  a(href='http://themes.3rdwavemedia.com/', target='_blank') 3rd Wave Media
+                  |  for developers and is 
+                  strong FREE
+                  |  under the 
+                  a.dotted-link(href='http://creativecommons.org/licenses/by/3.0/', target='_blank') Creative Commons Attribution 3.0 License
+                |                              
+                p
+                  | We will improve or add new features to this template based on users&apos; feedback so follow us on twitter to get notified when a new version is out!
+                |                             
+                a.btn.btn-cta-secondary.btn-follow(href='https://twitter.com/3rdwave_themes', target='_blank')
+                  i.fa.fa-twitter
+                  |  Follow us
+                |                             
+                a.btn.btn-cta-primary.btn-download(href='http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/', target='_blank')
+                  i.fa.fa-download
+                  |  I want to download
+              // //content
+            // //section-inner
+          // //section
+        // //secondary
+      // //row
+    // //masonry
+    // ******FOOTER******
+    footer.footer
+      .container.text-center
+        small.copyright
+          | Designed with 
+          i.fa.fa-heart
+          |  by 
+          a(href='http://themes.3rdwavemedia.com', target='_blank') 3rd Wave Media
+          |  for developers
+      // //container
+    // //footer
+    // Javascript
+    script(type='text/javascript', src='plugins/jquery-1.11.1.min.js')
+    |     
+    script(type='text/javascript', src='plugins/jquery-migrate-1.2.1.min.js')
+    |     
+    script(type='text/javascript', src='plugins/bootstrap/js/bootstrap.min.js')
+    |     
+    |     
+    script(type='text/javascript', src='plugins/jquery-rss/dist/jquery.rss.min.js')
+    // github activity plugin
+    script(type='text/javascript', src='http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js')
+    |     
+    script(type='text/javascript', src='http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js')
+    // custom js
+    script(type='text/javascript', src='js/main2.js')

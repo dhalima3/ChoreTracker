@@ -8,3 +8,9 @@ exports.index = function(req, res) {
     title: 'Home'
   });
 };
+
+exports.newTemplate = function(req, res) {
+  res.render('new-template', {
+    title: 'Landing Page'
+  });
+};
